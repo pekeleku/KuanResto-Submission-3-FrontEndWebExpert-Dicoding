@@ -1,0 +1,137 @@
+a {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+@media screen and (min-width:0px) and (max-width: 600px) {
+    .hero {
+        display: flex;
+        width: 100%;
+        background-image: url('../public/hero/hero-image-small.jpg');
+        background-size: cover;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+
+    .appBar {
+        grid-template-columns: 1fr auto;
+        padding: 8px 32px;
+    }
+
+    .appBar .appBarBrand h1 {
+        font-size: 1.5em;
+    }
+
+    .appBar .appBarMenu {
+        display: none;
+    }
+
+    .appBar .appBarNavigation {
+        position: static;
+        width: 100%;
+    }
+
+    .appBar .appBarNavigation ul li {
+        display: inline-block;
+    }
+
+    .appBar .appBar-navigation ul li a {
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+        margin: 0;
+    }
+
+
+    .restaurants {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .restaurant {
+        grid-template-columns: auto 1fr;
+    }
+
+    .restaurant .restaurantTitle {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .restaurant .restaurantOverview {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .restaurantInfo .card_content .card_title {
+        font-size: 15px;
+    }
+
+    .wrapper h3 {
+        font-size: 1.5em;
+    }
+
+    .restaurant-category {
+        font-size: 16px;
+    }
+
+    #menu-makanan,
+    #menu-minuman {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #menu-makanan,
+    #menu-minuman p {
+        font-size: 10px;
+    }
+
+    #menu-makanan,
+    #menu-minuman ol {
+        font-size: 12px;
+    }
+
+
+    #loading #loading-gif p {
+
+        font-size: 16px;
+
+    }
+
+    #error-message,
+    #thanks-review {
+        font-size: 12px;
+    }
+
+
+}
+
+@media screen and (min-width: 800px) {
+    .appBar .appBarBrand h1 {
+        font-size: 2em;
+    }
+
+    .column {
+        flex: 1;
+    }
+
+}
+
+@media screen and (min-width: 850px) {
+    .restaurants {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .restaurants {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .restaurants {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
